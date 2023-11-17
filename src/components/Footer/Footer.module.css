@@ -1,0 +1,49 @@
+/* Small Screen */
+.container {
+    background-color: #4361ee;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan lembut */
+    border-radius: 8px; /* Tambahkan sudut membulat */
+}
+
+.footer__title {
+    font-size: 1.8rem; /* Perbesar judul */
+    margin-bottom: 1rem;
+}
+
+.footer__author {
+    font-size: 1.2rem; /* Perbesar nama penulis */
+    margin-bottom: 1rem;
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+    .container {
+        padding: 2rem;
+    }
+
+    .footer__title {
+        font-size: 2rem; /* Perbesar judul */
+    }
+
+    .footer__author {
+        font-size: 1.5rem; /* Perbesar nama penulis */
+    }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+    .container {
+        padding: 3rem;
+    }
+
+    .footer__title {
+        font-size: 2.5rem; /* Perbesar judul */
+    }
+
+    .footer__author {
+        font-size: 1.8rem; /* Perbesar nama penulis */
+    }
+}

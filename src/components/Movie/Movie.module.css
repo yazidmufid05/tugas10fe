@@ -1,0 +1,43 @@
+/* Untuk tampilan gambar pada elemen dengan kelas 'movie__image' */
+.movie__image {
+    border-radius: 15px; /* Mengurangi sudut lengkung pada gambar */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan untuk gambar */
+    transition: transform 0.2s; /* Efek transisi saat gambar di-hover */
+}
+
+
+.movie__image:hover {
+    transform: scale(1.05); /* Efek scaling saat gambar di-hover */
+}
+
+/* Untuk judul film pada elemen dengan kelas 'movie__title' */
+.movie__title {
+    color: #4361ee;
+    font-size: 2rem; /* Meningkatkan ukuran font */
+    margin-bottom: 1rem; /* Menambahkan margin ke bawah sebesar 1rem */
+    font-weight: bold; /* Menambahkan ketebalan pada teks */
+}
+
+/* Untuk tanggal pada elemen dengan kelas 'movie__date' */
+.movie__date {
+    color: #64748b;
+    font-size: 1rem; /* Mengurangi ukuran font */
+}
+
+/* Media Query untuk layar berlebar 768px atau lebih besar */
+@media (min-width: 768px) {
+    .movie {
+        flex-basis: 50%;
+    }
+}
+
+/* Media Query untuk layar berlebar 992px atau lebih besar */
+@media (min-width: 992px) {
+    .movie {
+        flex-basis: 25%;
+        padding: 1.5rem; /* Menambahkan padding yang lebih besar di sekitar elemen */
+    }
+}

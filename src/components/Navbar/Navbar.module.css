@@ -1,0 +1,77 @@
+/* Small Screen */
+.container {
+    background-color: #4361ee;
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar__brand {
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar__menu {
+    display: none;
+}
+
+.navbar__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar__item {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s, transform 0.2s, border 0.2s; /* Menambahkan transisi untuk beberapa properti */
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: bold; /* Menambahkan ketebalan pada teks */
+}
+
+.navbar__item:hover {
+    color: #fff; /* Mengubah warna teks saat di-hover */
+    background-color: #b5179e; /* Mengubah warna latar belakang saat di-hover */
+    transform: scale(1.1); /* Memberikan efek scaling saat di-hover */
+    border-color: #b5179e; /* Menambahkan warna border saat di-hover */
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+    .container {
+        padding: 2rem;
+    }
+
+    .navbar__menu {
+        display: block;
+    }
+
+    .navbar__list {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+    
+}
